@@ -8,7 +8,7 @@ export default class SignUp extends Component {
 
                 <div className="form-group">
                     <label>First name</label>
-                    <input type="text" className="form-control" placeholder="First name" />
+                    <input type="text" className="form-control" name="firstName" onChange={this.handleChange} placeholder="First name" noValidate/>
                 </div>
 
                 <div className="form-group">
