@@ -22,7 +22,9 @@ export default class SignUp extends Component {
 
                 <div className="form-group">
                     <label>Email address</label>
-                    <input type="email" className="form-control" placeholder="Enter email" />
+                    <input type="email" className="form-control" name="email" onChange={this.handleChange} placeholder="Enter email" noValidate/>
+                    {errors.email.length > 0 && 
+                <span className='error'>{errors.email}</span>}
                 </div>
 
                 <div className="form-group">
