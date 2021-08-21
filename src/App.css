@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+.info {
+  padding-bottom: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.error {
+  color:#db2269;
+  font-size: 0.825em;
+  display: relative;
+  margin-top: 2px;
+}
