@@ -9,11 +9,15 @@ export default class SignUp extends Component {
                 <div className="form-group">
                     <label>First name</label>
                     <input type="text" className="form-control" name="firstName" onChange={this.handleChange} placeholder="First name" noValidate/>
+                    {errors.firstName.length > 0 &&
+                    <span className='error'>{errors.firstName}</span>}
                 </div>
 
                 <div className="form-group">
                     <label>Last name</label>
-                    <input type="text" className="form-control" placeholder="Last name" />
+                    <input type="text" className="form-control" name="lastName" onChange={this.handleChange} placeholder="Last name" noValidate/>
+                    {errors.lastName.length > 0 &&
+                    <span className='error'>{errors.lastName}</span>}
                 </div>
 
                 <div className="form-group">
