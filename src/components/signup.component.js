@@ -24,12 +24,17 @@ export default class SignUp extends Component {
                     <label>Email address</label>
                     <input type="email" className="form-control" name="email" onChange={this.handleChange} placeholder="Enter email" noValidate/>
                     {errors.email.length > 0 && 
-                <span className='error'>{errors.email}</span>}
+                    <span className='error'>{errors.email}</span>}
                 </div>
 
                 <div className="form-group">
                     <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
+                    <input type="password" className="form-control" name="password" onChange={this.handleChange} placeholder="Enter password" noValidate/>
+                    {errors.password.length > 0 && 
+                    <span className='error'>{errors.password}</span>}
+                </div>
+                <div className='info'>
+                    <small>Password must be eight characters in length</small>
                 </div>
 
                 <button type="submit" className="btn btn-primary btn-block">Sign Up</button>
