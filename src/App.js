@@ -27,8 +27,7 @@ function App() {
           <div className="row">
             <div className="col-lg-7">
               <div className="auth-image">
-                <div className="auth-inner">
-                  asdasd
+                <div className="auth-image-inner">
                 </div>
               </div>
             </div>
