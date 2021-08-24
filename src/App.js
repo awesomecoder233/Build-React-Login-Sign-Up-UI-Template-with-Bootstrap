@@ -24,16 +24,27 @@ function App() {
             </div>
           </div>
         </nav>
-        <div className="auth-wrapper">
-          <div className="auth-inner">
-            <Switch>
-              <Route exact path='/' component={Login} />
-              <Route path="/sign-in" component={Login} />
-              <Route path="/sign-up" component={SignUp} />
-            </Switch>
+          <div className="row">
+            <div className="col-lg-7">
+              <div className="auth-image">
+                <div className="auth-inner">
+                  asdasd
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-5">
+              <div className="auth-wrapper">
+                <div className="auth-inner">
+                  <Switch>
+                    <Route exact path='/' component={Login} />
+                    <Route path="/sign-in" component={Login} />
+                    <Route path="/sign-up" component={SignUp} />
+                  </Switch>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
     </Router>
   );
 }
